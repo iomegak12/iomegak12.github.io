@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>About REDIVAC Farms</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+
+    <style>
+        * {
+            font-family: Nunito, sans-serif;
+        }
+
+        .responsive-container-block {
+            min-height: 75px;
+            height: fit-content;
+            width: 100%;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 0px;
+            margin-right: auto;
+            margin-bottom: 0px;
+            margin-left: auto;
+            justify-content: flex-start;
+        }
+
+        .text-blk {
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            line-height: 25px;
+        }
+
+        .responsive-container-block.bigContainer {
+            padding-top: 10px;
+            padding-right: 30px;
+            padding-bottom: 10px;
+            padding-left: 30px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mainImg {
+            color: black;
+            width: 55%;
+            height: auto;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px 7px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        .text-blk.headingText {
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 34px;
+            color: rgb(51, 51, 51);
+            padding-top: 0px;
+            padding-right: 10px;
+            padding-bottom: 0px;
+            padding-left: 10px;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 10px;
+            margin-left: 0px;
+        }
+
+        .allText {
+            padding-top: 0px;
+            padding-right: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 40px;
+            width: 40%;
+            margin: 0 0 0 0;
+        }
+
+        .text-blk.subHeadingText {
+            color: rgb(102, 102, 102);
+            font-size: 25px;
+            line-height: 34px;
+            font-weight: 700;
+            padding-top: 0px;
+            padding-right: 10px;
+            padding-bottom: 0px;
+            padding-left: 10px;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 15px;
+            margin-left: 0px;
+        }
+
+        .text-blk.description {
+            font-size: 25px;
+            line-height: 34px;
+            color: rgb(102, 102, 102);
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 50px;
+            margin-left: 0px;
+            padding-top: 0px;
+            padding-right: 10px;
+            padding-bottom: 0px;
+            padding-left: 10px;
+        }
+
+        .explore {
+            font-size: 20px;
+            line-height: 28px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(244, 152, 146);
+            padding-top: 10px;
+            padding-right: 50px;
+            padding-bottom: 10px;
+            padding-left: 50px;
+            border-top-width: 0px;
+            border-right-width: 0px;
+            border-bottom-width: 0px;
+            border-left-width: 0px;
+            border-top-style: outset;
+            border-right-style: outset;
+            border-bottom-style: outset;
+            border-left-style: outset;
+            border-top-color: rgb(244, 152, 146);
+            border-right-color: rgb(244, 152, 146);
+            border-bottom-color: rgb(244, 152, 146);
+            border-left-color: rgb(244, 152, 146);
+            border-image-source: initial;
+            border-image-slice: initial;
+            border-image-width: initial;
+            border-image-outset: initial;
+            border-image-repeat: initial;
+            cursor: pointer;
+        }
+
+        .explore:hover {
+            background-image: initial;
+            background-position-x: initial;
+            background-position-y: initial;
+            background-size: initial;
+            background-repeat-x: initial;
+            background-repeat-y: initial;
+            background-attachment: initial;
+            background-origin: initial;
+            background-clip: initial;
+            background-color: rgb(255, 235, 234);
+            color: rgb(244, 152, 146);
+        }
+
+        .responsive-container-block.Container {
+            margin-top: 80px;
+            margin-right: auto;
+            margin-bottom: 50px;
+            margin-left: auto;
+            justify-content: center;
+            align-items: center;
+            max-width: 1320px;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        .responsive-container-block.Container.bottomContainer {
+            margin-top: 100px;
+            margin-right: 0px;
+            margin-bottom: 50px;
+            margin-left: 0px;
+            flex-direction: row-reverse;
+            margin: 100px auto 50px auto;
+        }
+
+        .allText.aboveText {
+            margin: 0 0 0 40px;
+        }
+
+        .allText.bottomText {
+            margin: 0 40px 0 0;
+        }
+
+        @media (max-width: 1024px) {
+            .responsive-container-block.Container {
+                max-width: 850px;
+            }
+
+            .mainImg {
+                width: 55%;
+                height: auto;
+            }
+
+            .text-blk.description {
+                font-size: 20px;
+            }
+
+            .allText {
+                width: 40%;
+                margin-top: 0px;
+                margin-right: 0px;
+                margin-bottom: 0px;
+                margin-left: 20px;
+            }
+
+            .responsive-container-block.bigContainer {
+                padding-top: 10px;
+                padding-right: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+            }
+
+            .text-blk.subHeadingText {
+                font-size: 22px;
+            }
+
+            .responsive-container-block.Container.bottomContainer {
+                margin: 80px auto 50px auto;
+            }
+
+            .responsive-container-block.Container {
+                max-width: 830px;
+            }
+
+            .allText.aboveText {
+                margin: 30px 0 0 40px;
+            }
+
+            .allText.bottomText {
+                margin: 30px 40px 0 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mainImg {
+                width: 90%;
+            }
+
+            .allText {
+                width: 100%;
+                margin-top: 0px;
+                margin-right: 0px;
+                margin-bottom: 0px;
+                margin-left: 0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding-top: 0px;
+                padding-right: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+            }
+
+            .responsive-container-block.Container {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .text-blk.headingText {
+                text-align: center;
+            }
+
+            .text-blk.subHeadingText {
+                text-align: center;
+                font-size: 25px;
+            }
+
+            .text-blk.description {
+                text-align: center;
+                font-size: 25px;
+            }
+
+            .allText {
+                margin-top: 40px;
+                margin-right: 0px;
+                margin-bottom: 0px;
+                margin-left: 0px;
+            }
+
+            .allText.aboveText {
+                margin: 40px 0 0 0;
+            }
+
+            .responsive-container-block.Container {
+                margin: 80px auto 50px auto;
+            }
+
+            .responsive-container-block.Container.bottomContainer {
+                margin: 50px auto 50px auto;
+            }
+
+            .allText.bottomText {
+                margin: 40px 0 0 0;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .responsive-container-block.Container {
+                padding-top: 10px;
+                padding-right: 0px;
+                padding-bottom: 10px;
+                padding-left: 0px;
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .mainImg {
+                width: 100%;
+            }
+
+            .responsive-container-block.bigContainer {
+                padding-top: 10px;
+                padding-right: 25px;
+                padding-bottom: 10px;
+                padding-left: 25px;
+            }
+
+            .text-blk.subHeadingText {
+                font-size: 25px;
+                padding-top: 0px;
+                padding-right: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+            }
+
+            .text-blk.description {
+                font-size: 25px;
+                padding-top: 0px;
+                padding-right: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+            }
+
+            .allText {
+                padding-top: 0px;
+                padding-right: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                width: 100%;
+            }
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap');
+
+        *,
+        *:before,
+        *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .wk-desk-1 {
+            width: 8.333333%;
+        }
+
+        .wk-desk-2 {
+            width: 16.666667%;
+        }
+
+        .wk-desk-3 {
+            width: 25%;
+        }
+
+        .wk-desk-4 {
+            width: 33.333333%;
+        }
+
+        .wk-desk-5 {
+            width: 41.666667%;
+        }
+
+        .wk-desk-6 {
+            width: 50%;
+        }
+
+        .wk-desk-7 {
+            width: 58.333333%;
+        }
+
+        .wk-desk-8 {
+            width: 66.666667%;
+        }
+
+        .wk-desk-9 {
+            width: 75%;
+        }
+
+        .wk-desk-10 {
+            width: 83.333333%;
+        }
+
+        .wk-desk-11 {
+            width: 91.666667%;
+        }
+
+        .wk-desk-12 {
+            width: 100%;
+        }
+
+        @media (max-width: 1024px) {
+            .wk-ipadp-1 {
+                width: 8.333333%;
+            }
+
+            .wk-ipadp-2 {
+                width: 16.666667%;
+            }
+
+            .wk-ipadp-3 {
+                width: 25%;
+            }
+
+            .wk-ipadp-4 {
+                width: 33.333333%;
+            }
+
+            .wk-ipadp-5 {
+                width: 41.666667%;
+            }
+
+            .wk-ipadp-6 {
+                width: 50%;
+            }
+
+            .wk-ipadp-7 {
+                width: 58.333333%;
+            }
+
+            .wk-ipadp-8 {
+                width: 66.666667%;
+            }
+
+            .wk-ipadp-9 {
+                width: 75%;
+            }
+
+            .wk-ipadp-10 {
+                width: 83.333333%;
+            }
+
+            .wk-ipadp-11 {
+                width: 91.666667%;
+            }
+
+            .wk-ipadp-12 {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .wk-tab-1 {
+                width: 8.333333%;
+            }
+
+            .wk-tab-2 {
+                width: 16.666667%;
+            }
+
+            .wk-tab-3 {
+                width: 25%;
+            }
+
+            .wk-tab-4 {
+                width: 33.333333%;
+            }
+
+            .wk-tab-5 {
+                width: 41.666667%;
+            }
+
+            .wk-tab-6 {
+                width: 50%;
+            }
+
+            .wk-tab-7 {
+                width: 58.333333%;
+            }
+
+            .wk-tab-8 {
+                width: 66.666667%;
+            }
+
+            .wk-tab-9 {
+                width: 75%;
+            }
+
+            .wk-tab-10 {
+                width: 83.333333%;
+            }
+
+            .wk-tab-11 {
+                width: 91.666667%;
+            }
+
+            .wk-tab-12 {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .wk-mobile-1 {
+                width: 8.333333%;
+            }
+
+            .wk-mobile-2 {
+                width: 16.666667%;
+            }
+
+            .wk-mobile-3 {
+                width: 25%;
+            }
+
+            .wk-mobile-4 {
+                width: 33.333333%;
+            }
+
+            .wk-mobile-5 {
+                width: 41.666667%;
+            }
+
+            .wk-mobile-6 {
+                width: 50%;
+            }
+
+            .wk-mobile-7 {
+                width: 58.333333%;
+            }
+
+            .wk-mobile-8 {
+                width: 66.666667%;
+            }
+
+            .wk-mobile-9 {
+                width: 75%;
+            }
+
+            .wk-mobile-10 {
+                width: 83.333333%;
+            }
+
+            .wk-mobile-11 {
+                width: 91.666667%;
+            }
+
+            .wk-mobile-12 {
+                width: 100%;
+            }
+        }
+    </style>
+
+    <link href="css/styles.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html">REDIVAC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="list.html">All Products</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                            <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-outline-dark" type="submit">
+                        <i class="bi-cart-fill me-1 disabled"></i>
+                        Cart
+                        <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content-->
+    <section
+        style="image-rendering: auto; background-image: url('assets/executive-looks.jpg'); background-repeat:no-repeat;background-size:100%; ">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-lg-6">
+                    <div class="full-page-image">
+                        <h1 class="mt-5" style="color: black; opacity: 60%;">Redivac Farms is proud to be India’s
+                            fastest-growing broiler producer.
+                        </h1>
+                        <p style="color: black; font-weight: 100;">REDIVAC Poultry Farm is a premium poultry farm
+                            dedicated
+                            to raising
+                            healthy, high-quality chickens using sustainable and ethical farming practices. We
+                            specialize in supplying fresh, farm-raised poultry to retailers, restaurants, and consumers,
+                            ensuring superior taste and nutrition in every product.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="responsive-container-block bigContainer">
+        <div class="responsive-container-block Container">
+            <img class="mainImg" src="./assets/about-us-image-1.jpg">
+            <div class="allText aboveText">
+                <p class="text-blk headingText">
+                    About Us
+                </p>
+                <p class="text-blk subHeadingText" style="font-weight: 100; font-size: small;">
+                    Redivac Farms: A Legacy of Excellence in Poultry Farming
+                </p>
+                <p class="text-blk description" style="font-weight: 100; font-size: small;">
+                    Redivac Farms is a leading name in India’s, especially Tamil Nadu's poultry industry, specializing
+                    in the production and distribution of high-quality broiler chicken, eggs, and processed meat. With a
+                    strong presence in Bangalore and Madurai, we are committed to providing fresh, healthy, and hygienic
+                    poultry products to consumers while supporting rural communities through sustainable farming
+                    practices.
+                </p>
+                <button class="explore">
+                    Explore
+                </button>
+            </div>
+        </div>
+
+        <div class="responsive-container-block Container bottomContainer">
+            <img class="mainImg" src="./assets/about-us-image-2.jpg">
+            <div class="allText bottomText">
+                <p class="text-blk headingText">
+                    Our Vision
+                </p>
+                <p class="text-blk subHeadingText" style="font-weight: 100; font-size: small;">
+                    Empowering Rural India through Poultry Integration
+                </p>
+                <p class="text-blk description" style="font-weight: 100; font-size: small;">
+                    At Redivac Farms, our vision is to empower rural India through our innovative "Poultry Integration"
+                    model. By fostering strong partnerships with local farmers, we enable sustainable growth and
+                    economic upliftment. Our mission is to produce nutritious, high-quality chicken and eggs while
+                    maintaining global standards in food safety and animal welfare.
+                </p>
+                <button class="explore">
+                    Explore
+                </button>
+            </div>
+        </div>
+
+        <div class="responsive-container-block Container">
+            <img class="mainImg" src="./assets/about-us-image-3.jpg">
+            <div class="allText aboveText">
+                <p class="text-blk headingText">
+                    Our Mission
+                </p>
+                <p class="text-blk subHeadingText" style="font-weight: 100; font-size: large;">
+                    Commitment to Quality and Hygiene
+                </p>
+                <p class="text-blk description" style="font-weight: 100; font-size: small;">
+                    We adhere to the highest industry standards in poultry farming, ensuring that our products meet
+                    stringent quality and safety regulations. Our farms and processing units are equipped with modern
+                    technology to maintain optimal hygiene, providing consumers with farm-fresh chicken and eggs that
+                    are free from harmful additives.
+                </p>
+                <button class="explore">
+                    Explore
+                </button>
+            </div>
+        </div>
+
+
+        <div class="responsive-container-block Container bottomContainer">
+            <img class="mainImg" src="./assets/about-us-image-4.jpg">
+            <div class="allText bottomText">
+                <p class="text-blk headingText">
+                    Business Model
+                </p>
+                <p class="text-blk subHeadingText" style="font-weight: 100; font-size: large;">
+                    Win-Win Model, Empowering Rural Communities & Expanding Our Retail Network
+                </p>
+                <p class="text-blk description" style="font-weight: 100; font-size: small;">
+                    Through our contract farming initiatives, we have empowered thousands of rural entrepreneurs,
+                    enabling them to build sustainable businesses. By offering financial and technical support, we
+                    ensure that farmers benefit from stable income opportunities while contributing to India's growing
+                    poultry industry.
+
+                    <br />
+                    <br />
+
+                    To cater to the increasing demand for fresh and processed poultry, Redivac Farms has established a
+                    modern retail distribution network. Our strategically located outlets and supply chains ensure that
+                    consumers have access to premium poultry products, enhancing convenience and quality assurance.
+
+                    <br />
+                    <br />
+
+                    Redivac Farms has pioneered the "Poultry Integration" approach, creating a mutually beneficial
+                    partnership between farmers and integrators. This model provides farmers with the necessary
+                    resources, technical support, and market access while ensuring a consistent supply of high-quality
+                    poultry for our customers. Our integration system has contributed significantly to rural employment
+                    and economic stability.
+
+                </p>
+                <button class="explore">
+                    Explore
+                </button>
+            </div>
+        </div>
+
+
+        <div class="responsive-container-block Container">
+            <img class="mainImg" src="./assets/about-us-image-5.jpg">
+            <div class="allText aboveText">
+                <p class="text-blk headingText">
+                    Our Practices
+                </p>
+                <p class="text-blk subHeadingText" style="font-weight: 100; font-size: large;">
+                    Sustainable and Ethical Farming Practices & Leadership and Expertise
+                </p>
+                <p class="text-blk description" style="font-weight: 100; font-size: small;">
+
+                    Sustainability is at the heart of our operations. We follow responsible farming practices that
+                    prioritize animal welfare, environmental conservation, and efficient resource utilization. Our farms
+                    operate with a commitment to reducing carbon footprints while maintaining the highest production
+                    standards.
+
+
+                    <br />
+                    <br />
+
+                    Our continuous investment in infrastructure, technology, and
+                    research ensures our sustained growth and ability to meet the evolving needs of the poultry
+                    industry.
+
+
+                    <br />
+                    <br />
+
+                    Under the dynamic leadership of our Executive Director, Jooty Dhamodharan Ramkumar, and Director, TJ
+                    Chitra, Redivac Farms continues to set new benchmarks in the poultry sector. Their strategic vision
+                    and industry expertise drive our commitment to excellence and innovation.
+
+
+                </p>
+                <button class="explore">
+                    Explore
+                </button>
+            </div>
+        </div>
+
+
+        <div class="responsive-container-block Container bottomContainer">
+            <img class="mainImg" src="./assets/about-us-image-6.jpg">
+            <div class="allText bottomText">
+                <p class="text-blk headingText">
+                    Long Term Goals
+                </p>
+                <p class="text-blk subHeadingText" style="font-weight: 100; font-size: large;">
+                    The Future of Redivac Farms
+                </p>
+                <p class="text-blk description" style="font-weight: 100; font-size: small;">
+                    As we look ahead, Redivac Farms is focused on expanding its market reach, enhancing production
+                    capabilities, and further strengthening rural development initiatives. With a steadfast commitment
+                    to quality, sustainability, and community empowerment, we aim to become a household name in India's
+                    poultry industry, ensuring healthier lives for generations to come.
+                </p>
+                <button class="explore">
+                    Explore
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; REDIVAC Farms 2023 - 2025</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
