@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>REDIVAC Farms</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <style>
+        .custom-tabs {
+            background-color: #f8f9fa;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .custom-tabs .nav-link {
+            color: #495057;
+            border: none;
+            padding: 15px 25px;
+            transition: all 0.3s ease;
+        }
+
+        .custom-tabs .nav-link.active {
+            color: #fff;
+            background-color: #007bff;
+            box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
+        }
+
+        .custom-tabs .tab-content {
+            padding: 30px;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#!">REDIVAC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="list.html">All Products</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                            <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-outline-dark" type="submit">
+                        <i class="bi-cart-fill me-1 disabled"></i>
+                        Cart
+                        <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Product section-->
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="row gx-4 gx-lg-5 align-items-center">
+                <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="./assets/ChickenDrumsticks.jpg"
+                        alt="..." />
+                </div>
+                <div class="col-md-6">
+                    <div class="small mb-1">SKU: CD-495</div>
+                    <h1 class="display-5 fw-bolder">Chicken Drumsticks</h1>
+                    <div class="fs-5 mb-5">
+                        <span class="text-decoration-line-through">₹ 350</span>
+                        <span>₹ 300</span>
+                    </div>
+                    <p class="lead">
+                    <div class="tab fw-light">
+                        <p>Another summer barbecue classic is the chicken drumstick. This succulent, dark cut of meat
+                            comes on the bone and is from the chicken’s shins. In addition to their savory, juicy
+                            flavor, chicken drumsticks are cost-effective and easy to cook. </p>
+
+                        <p>Whether you grill drumsticks on the barbecue or roast them in the oven, you can get creative
+                            with herbs, spices, and marinades, from spicy cajun to sweet honey garlic.</p>
+
+                        <ul>
+                            <li><strong>Meat type:</strong> Brown</li>
+                            <li><strong>Common uses: </strong>Barbecues, sheet pan dinners</li>
+                            <li><strong>How to cook: </strong>Grill, oven bake</li>
+                        </ul>
+                        </p>
+                        <div class="d-flex">
+                            <input class="form-control text-center me-3" disabled id="inputQuantity" type="num"
+                                value="1" style="max-width: 3rem" />
+                            <button class="btn btn-outline-dark flex-shrink-0" disabled type="button">
+                                <i class="bi-cart-fill me-1"></i>
+                                Add to cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5 fw-light">
+            <h2 class="text-center mb-4">Product Portfolio</h2>
+            <div class="custom-tabs">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                            type="button" role="tab" aria-controls="home" aria-selected="true">Product Details</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                            type="button" role="tab" aria-controls="profile" aria-selected="false">Protocols</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                            type="button" role="tab" aria-controls="contact" aria-selected="false">Delivery</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews"
+                            type="button" role="tab" aria-controls="contact" aria-selected="false">Reviews</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="tab">
+                            <p>Experience the versatility and juicy flavor of our pasture-raised chicken drumsticks.
+                                They’re perfect for a variety of cooking methods, like smoking, frying, or baking. And
+                                their tender texture allows them to absorb any spice rubs or sauces you choose.</p>
+                            <p>No matter how you cook them, our chicken drumsticks are delicious. They’re juicy, tender,
+                                and flavorful, making them a hit at any gathering with family and friends.</p>
+                            <p>Cook up our chicken drumsticks in delicious dishes like these:</p>
+
+                            <ul>
+                                <li>Grilled chicken drumsticks with BBQ sauce</li>
+                                <li>Oven-roasted chicken drumsticks with herbs and lemon</li>
+                                <li>Fried chicken drumsticks with an Asian-inspired ginger sauce</li>
+                            </ul>
+                            <p>At Redivac Farms, we prioritize the well-being of our animals and the environment. Our
+                                chickens are &nbsp;raised on regenerative pastures while the seasons allow and then
+                                transition to warm winter housing with pasture access. Both approaches - appropriate for
+                                the season -&nbsp;ensure their natural growth, health,&nbsp;development and a quality
+                                end product for you.</p>
+                            <p>Order now and experience the exceptional taste and quality of our chicken drumsticks!</p>
+                            <p><a
+                                    href="./assets/nutrition-information.jpg">Click
+                                    Here for Nutritional Information</a></p>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="tab">
+                            <p>Redivac Farms ensures all their products adhere to strict protocols to provide our
+                                customers
+                                with products that are environmentally conscious, healthy, and humanely raised.</p>
+                            <p>Our chicken follows this set of guidelines and protocols:</p>
+                            <h3>Antibiotic &amp; GMO-Free</h3>
+                            <p>At Redivac Farms, we understand that consumers today are more concerned than ever about
+                                the
+                                use of antibiotics, harmful additives, and genetically modified organisms (GMOs) in food
+                                production.</p>
+                            <p>That's why we only produce meat that is 100% Free of antibiotics and GMO-grains.</p>
+                            <p>We believe that the responsible use of antibiotics is important for both animal welfare
+                                and public health. We prioritize raising our animals in a stress-free environment, using
+                                animal husbandry practices that promote health and hardiness.</p>
+                            <p>We take pride in offering high-quality, ethically-raised meat that is not only delicious
+                                and nutritious but also environmentally sustainable.</p>
+                            <h3>No Animal By-Products</h3>
+                            <p>At Redivac Farms, we believe in ensuring our customers get only the best quality products
+                                for their health.&nbsp;</p>
+                            <p>That’s why we don’t use any animal by-products in our non-ruminant animal feed for our
+                                pasture-raised pigs and ethically-produced chickens.&nbsp;</p>
+                            <p>Additionally, our ruminant animals do not receive animal by-products as they get all the
+                                nutrition they need from grazing and foraging on regenerative pastures.&nbsp;</p>
+                            <p>Our commitment to providing meat that is both healthy and ethically raised ensures that
+                                our customers can enjoy high-quality meat while also supporting the environment and
+                                animal welfare.</p>
+                            <p>When you choose Redivac Farms, you can be confident that you’re making a positive impact
+                                on
+                                the world through your food choices.</p>
+                            <h3>Regeneratively Focused</h3>
+                            <p>At Redivac Farms, we are committed to integrating regenerative agriculture practices that
+                                not only produce high-quality products but also improve the health of our soil, animals,
+                                and the environment.</p>
+                            <p>Our regeneratively raised ruminant animals are strategically moved across open pastures,
+                                where they graze on nutrient-rich grasses. This grazing process helps to build the
+                                animals' health and resilience while enhancing the carbon sequestering of the soil –
+                                helping to combat environmental degradation.<br><br>As the weather and seasons allow our
+                                chickens and pigs rotate across the same pastures as our cattle and sheep for additional
+                                diversity and regenerative impact.<br><br>By using regenerative agriculture techniques,
+                                we can prevent the need for synthetic fertilizers, pesticides, and herbicides on our
+                                pastures, which can be harmful to the environment. Instead, we can rely on natural
+                                systems to support the health of our animals and the land they graze on.<br><br>Choosing
+                                regeneratively raised meat from Redivac Farms means you're also supporting sustainable
+                                farming practices prioritizing the health of our animals and the planet.<br></p>
+                            <h3>Humanely Raised</h3>
+                            <p>At Redivac Farms, we treat animals with respect and care. That's why all of our animals
+                                are
+                                humanely raised in a low-stress environment, with plenty of extra&nbsp;room to move and
+                                express their natural instincts.&nbsp;</p>
+                            <p>We take pride in the fact that our animals are treated with the utmost care and
+                                attention. From open pastures to low-stress handling and humane harvesting, we’re
+                                committed to ethical farming practices. We only partner with family-owned abattoirs with
+                                humane, transparent operations.</p>
+                            <h3>No Growth Promotants</h3>
+                            <p>At Redivac Farms, we never administer growth promotants such as Paylean to our
+                                animals.&nbsp;</p>
+                            <p>Instead, we raise our animals naturally, with wholesome nutrition, resulting in meat
+                                that’s better for your health and well-being.</p>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="tab">
+                            <h3>Fast Home Delivery</h3>
+                            <p>Free delivery starting at <a href="/how-home-delivery-works" target="_blank">₹ 999+ in
+                                    many cities within Tamilnadu</a> Plus, get your order in as little as two days with
+                                our weekly
+                                deliveries. We deliver everywhere within the region of Tamilnadu.</p>
+                            <p>Before confirming your purchase, you'll receive an estimated delivery date so you can
+                                plan accordingly.</p>
+                            <h4>REDIVAC Farms' Five Steps for Fast and Safe Delivery</h4>
+                            <ol>
+                                <li>Items are vacuumed sealed in BPA-free packaging for safe transit.</li>
+                                <li>Extra insulated boxes are designed to withstand hot temperatures.</li>
+                                <li>Vapor liners are used to reduce airflow &amp; keep your food cold.</li>
+                                <li>Extra dry ice to keep food safe for at least an extra 24 hours.</li>
+                                <li>SMS notifications to update you about the status of your order.</li>
+                            </ol>
+                            <p>To learn more about our home delivery service, please visit our <a
+                                    href="https://redivacfarms.net/how-home-delivery-works">delivery FAQ page</a>.&nbsp;
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade fw-light" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                        <div class="tab">
+                            <h2>Reviews</h2>
+                            <div class="embedsocial-reviews" data-ref="85ed8bbaf048211ec6432fda69cb545e7310fc01">
+                                No Reviews Yet.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Related items section-->
+    <section class="py-5 bg-light">
+        <div class="container px-4 px-lg-5 mt-5">
+            <h2 class="fw-bolder mb-4">Related products</h2>
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                        </div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="./assets/Bone-inChickenThighs.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Bone-In Chicken Thighs</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <span class="text-decoration-line-through">₹ 380</span>
+                                <span>₹ 330</span>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto disabled" href="#">View
+                                    Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                        </div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="./assets/Bone-inChickenThighs.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Chicken Backs with Frames Attached</h5>
+
+                                <!-- Product price-->
+                                <span class="text-decoration-line-through">₹ 320</span>
+                                <span>₹ 280</span>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto disabled" href="#">View
+                                    Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                        </div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="./assets/ChickenDrumsticks.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Chicken Drum-Sticks</h5>
+                                <!-- Product price-->
+                                <span class="text-decoration-line-through">₹ 350</span>
+                                <span>₹ 300</span>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto disabled" href="#">VIew
+                                    Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                        </div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="./assets/ChickenTenderloins.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Chicken Tenderloins</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                <span class="text-decoration-line-through">₹ 375</span>
+                                <span>₹ 350</span>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto disabled" href="#">View
+                                    Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; REDIVAC Farms 2023 - 2025</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
